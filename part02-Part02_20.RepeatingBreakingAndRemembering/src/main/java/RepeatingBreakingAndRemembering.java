@@ -14,5 +14,39 @@ public class RepeatingBreakingAndRemembering {
         
         Scanner scanner = new Scanner(System.in);
 
+        int sum = 0;
+        int count = 0;
+        int even = 0;
+        int odd = 0;
+        
+
+        while (true) {
+            System.out.print("Give numbers:");
+            int number = scanner.nextInt();
+
+            if (number == -1) {
+                System.out.println("Thx! Bye!");
+                break;
+            }
+
+            if (number % 2 == 0) {
+                even++;
+            } else if (number % 2 != 0) {
+                odd++;
+            }
+
+            sum += number;
+            count += 1;
+
+        }
+
+        float average = (float) sum / count;
+
+        System.out.println("Sum: " + sum);
+        System.out.println("Numbers: " + count);
+        System.out.println("Average: " + average);
+        System.out.println("Even: " + even);
+        System.out.println("Odd: " + odd);
+    
     }
 }
