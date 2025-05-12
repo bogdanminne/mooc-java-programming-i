@@ -1,4 +1,6 @@
 
+
+
 public class StarSign {
 
     public static void main(String[] args) {
@@ -20,17 +22,41 @@ public class StarSign {
 
     public static void printStars(int number) {
         // first part of the exercise
+        int x = 1;
+        while (x <= number) {
+            System.out.print("*");   
+            x++;
+        }
+        System.out.println("");
     }
 
     public static void printSquare(int size) {
         // second part of the exercise
+        int x = 1;
+        while (x <= size) {
+            printStars(size);
+            x++;
+        }
     }
 
     public static void printRectangle(int width, int height) {
         // third part of the exercise
+        int x = 1;
+        while (x <= height) {
+            printStars(width);
+            x++;
+        }
     }
 
     public static void printTriangle(int size) {
         // fourth part of the exercise
+        int x = 1;
+        while (x <= size) {
+            printStars(x);
+            x++;
+        }
     }
+
+    
+
 }
