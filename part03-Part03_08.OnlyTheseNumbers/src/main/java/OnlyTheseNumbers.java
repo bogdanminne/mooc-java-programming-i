@@ -17,5 +17,15 @@ public class OnlyTheseNumbers {
             numbers.add(number);
         }
 
+        System.out.print("Give start indice: ");
+        int start = scanner.nextInt();
+
+        System.out.print("Give end indice: ");
+        int end = scanner.nextInt();
+
+        for (int i = start; i <= end; i++) {
+            System.out.println(numbers.get(i));
+        }
+
     }
 }
