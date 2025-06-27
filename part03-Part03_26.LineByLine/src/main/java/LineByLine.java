@@ -1,5 +1,4 @@
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class LineByLine {
@@ -8,33 +7,28 @@ public class LineByLine {
         Scanner scanner = new Scanner(System.in);
 
 
-        ArrayList<String> array = new ArrayList<String>();
+
+        String strings = "";
+
 
         while (true) {
-            String input = scanner.nextLine();
+            String temp = scanner.nextLine();
+            
+            strings += temp + " ";
+            
 
-            if (input.equals("")) {break;}
+            if (temp.equals("")) {break;}
 
-            array.add(input);
+            
 
         }
 
+        String[] pieces = strings.split(" ");
 
-
-
-
-
-
-
-
-    
-
-       
-
-        for (int i = 0; i < array.size(); i++) {
-            System.out.println(array.get(i));
+        for (int i = 0; i < pieces.length; i++) {
+            System.out.println(pieces[i]);
         }
-
-
+        
+     
     }
 }

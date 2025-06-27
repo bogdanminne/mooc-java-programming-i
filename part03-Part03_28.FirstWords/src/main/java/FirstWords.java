@@ -7,5 +7,17 @@ public class FirstWords {
         Scanner scanner = new Scanner(System.in);
 
 
+        while (true) {
+            String input = scanner.nextLine();
+
+            if (input.equals("")) {break;}
+
+            String[] split = input.split(" ");
+            System.out.println(split[0]);
+
+
+        }
+
+
     }
 }
